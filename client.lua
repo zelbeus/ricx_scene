@@ -124,8 +124,8 @@ Citizen.CreateThread(function() --
                 local sc =  Scenes[i].coords
                 GetDistanceBetweenCoords(x1, y1, z1, x2, y2, z2, useZ)
                 local dist = GetDistanceBetweenCoords(cc.x,cc.y,cc.z,sc.x,sc.y,sc.z, 1)
-                if dist < 5.0 then
-                    if dist < 1.0 then
+                if dist < Config.ViewDistance then
+                    if dist < Config.EditDistance then
                         if editing == false then
                             local label  = CreateVarString(10, 'LITERAL_STRING', "Scene")
                             PromptSetActiveGroupThisFrame(SceneGroup, label)
