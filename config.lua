@@ -9,6 +9,10 @@ Config.Prompts = {
     Scale = {[1] = "Scale", [2] = 0x6319DB71}
 }
 
+Config.ViewDistance = 10.0
+
+Config.EditDistance = 1.0
+
 Config.RestartDelete = true
 
 Config.Texts = {
